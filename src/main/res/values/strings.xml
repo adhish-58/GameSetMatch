@@ -1,0 +1,20 @@
+<resources>
+    <string name="winner"> Winner </string>
+    <string name="ace"> Ace </string>
+    <string name="fault"> Fault </string>
+    <string name="uerr"> UNF ERROR </string>
+    <string name="ferr"> FCD ERROR </string>
+    <string name="aces"> Aces</string>
+    <string name="serve_first"> 1st serve in %</string>
+    <string name="double_faults"> Double faults</string>
+    <string name="win_first"> Win % on 1st serve</string>
+    <string name="win_second"> Win % on 2nd serve</string>
+    <string name="points_won"> Points won</string>
+    <string name="receiving_points"> Receiving points won</string>
+    <string name="winners"> Winners</string>
+    <string name="forced"> Forced errors</string>
+    <string name="unforced"> Unforced errors</string>
+    <string name="break_points"> Break points</string>
+    <string name="break_conversion"> Break Pt. conversion</string>
+    <string name="app_name">Game Set Match</string>
+</resources>

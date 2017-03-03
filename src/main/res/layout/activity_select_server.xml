@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_select_server"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/court3"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="softeng.myapp.SelectServerActivity">
+
+    <TextView
+        android:id="@+id/TextPlayer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textSize="35dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="vs"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        android:textSize="20dp"/>
+    <TextView
+        android:textSize="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/TextPlayer2"
+        android:textColor="@color/white" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose player to serve first"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:alpha="0.8"
+            android:id="@+id/editText2" />
+
+        <RadioGroup
+            android:id="@+id/choose_serve"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:divider="@color/black" >
+
+            <RadioButton
+                android:id="@+id/player1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/custom_divider"
+                android:alpha="0.8"/>
+
+            <RadioButton
+                android:id="@+id/player2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/custom_divider"
+                android:alpha="0.8"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="START"
+        android:onClick="onClickStart"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:alpha="0.8"
+        android:id="@+id/nextfinal" />
+
+
+
+</LinearLayout>

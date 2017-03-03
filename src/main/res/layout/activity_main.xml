@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/court3"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:id="@+id/activity_main">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Player or team name:"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:background="@drawable/text_background"
+        android:gravity="center"
+        android:alpha="0.8"
+        android:id="@+id/editText1" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Player 1/Team 1"
+        android:id="@+id/Name1"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Player 2/Team 2"
+        android:id="@+id/Name2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="33dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose your match format"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:background="@drawable/text_background"
+            android:gravity="center"
+            android:alpha="0.8"
+            android:id="@+id/editText2" />
+
+        <RadioGroup
+            android:id="@+id/matchFormat"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:divider="@color/black">
+
+            <RadioButton
+                android:id="@+id/set3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/custom_divider"
+                android:text="Play a 4-Game Set (Win by 2)"
+                android:alpha="0.8"/>
+
+            <RadioButton
+                android:id="@+id/set2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/custom_divider"
+                android:text="Play a 6-Game Set (Win by 2)"
+                android:alpha="0.8"/>
+
+            <RadioButton
+                android:id="@+id/set1_6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/custom_divider"
+                android:text="Play a 8-Game Set (Win by 2)"
+                android:alpha="0.8"/>
+
+
+        </RadioGroup>
+    </LinearLayout>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="NEXT"
+        android:onClick="onClickNext"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:alpha="0.8"
+        android:id="@+id/next" />
+</LinearLayout>
