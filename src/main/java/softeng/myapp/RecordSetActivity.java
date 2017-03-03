@@ -2,11 +2,11 @@ package softeng.myapp;
 
 import android.content.Intent;
 import android.graphics.Typeface;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 public class RecordSetActivity extends AppCompatActivity {
@@ -59,7 +59,7 @@ public class RecordSetActivity extends AppCompatActivity {
             Button fault = (Button) findViewById(R.id.faultp2);
             fault.setEnabled(false);
             textView = (TextView) findViewById(R.id.p1);
-            textView.setBackground(getResources().getDrawable(R.drawable.denote_server));
+            textView.setBackground(ContextCompat.getDrawable(getApplicationContext(), R.drawable.denote_server));
         } else {
             player2.setIsServing(true);
             Button Ace = (Button) findViewById(R.id.acep1);
@@ -67,7 +67,7 @@ public class RecordSetActivity extends AppCompatActivity {
             Button fault = (Button) findViewById(R.id.faultp1);
             fault.setEnabled(false);
             textView = (TextView) findViewById(R.id.p2);
-            textView.setBackground(getResources().getDrawable(R.drawable.denote_server));
+            textView.setBackground(ContextCompat.getDrawable(getApplicationContext(), R.drawable.denote_server));
         }
     }
 
@@ -286,9 +286,9 @@ public class RecordSetActivity extends AppCompatActivity {
             fault = (Button) findViewById(R.id.faultp2);
             fault.setEnabled(true);
             textView = (TextView) findViewById(R.id.p1);
-            textView.setBackground(getResources().getDrawable(R.drawable.custom_divider));
+            textView.setBackground(ContextCompat.getDrawable(getApplicationContext(), R.drawable.custom_divider));
             textView = (TextView) findViewById(R.id.p2);
-            textView.setBackground(getResources().getDrawable(R.drawable.denote_server));
+            textView.setBackground(ContextCompat.getDrawable(getApplicationContext(), R.drawable.denote_server));
         } else {
             player1.setIsServing(true);
             player2.setIsServing(false);
@@ -301,9 +301,9 @@ public class RecordSetActivity extends AppCompatActivity {
             fault = (Button) findViewById(R.id.faultp1);
             fault.setEnabled(true);
             textView = (TextView) findViewById(R.id.p2);
-            textView.setBackground(getResources().getDrawable(R.drawable.custom_divider));
+            textView.setBackground(ContextCompat.getDrawable(getApplicationContext(), R.drawable.custom_divider));
             textView = (TextView) findViewById(R.id.p1);
-            textView.setBackground(getResources().getDrawable(R.drawable.denote_server));
+            textView.setBackground(ContextCompat.getDrawable(getApplicationContext(), R.drawable.denote_server));
         }
     }
 
@@ -321,13 +321,10 @@ public class RecordSetActivity extends AppCompatActivity {
     public void changeSetScore(player playerA, player playerB) {
         int scoreA = playerA.getSet();
         int scoreB = playerB.getSet();
-        if ((scoreA >= 0 && scoreA <= NUM_GAMES - 2) || (scoreA - scoreB) == 0) {
-            playerA.setSet( );
-        } else if ((scoreA - scoreB) >= 1) {
-            playerA.setSet();
-            updateScreen();
+        playerA.setSet();
+        if (((scoreA-scoreB) >=1 && scoreA >= NUM_GAMES-1)) {
             finishMatch(playerA);
-        }
+        } 
     }
 
     public void finishMatch(player winner) {
