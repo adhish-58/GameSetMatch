@@ -207,22 +207,42 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:orientation="vertical"
-            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
             android:layout_marginTop="25dp">
-
-            <Button
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="View Stats"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:background="#CCCCCC55"
-                android:onClick="onClickStats"/>
+                android:orientation="horizontal"
+                android:gravity="left"
+                android:layout_weight="0.5">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Undo"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="#EFC23838"
+                    android:id="@+id/undo"
+                    android:onClick="onClickUndo" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:layout_weight="0.5"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="View Stats"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:background="#EFCCCC55"
+                    android:onClick="onClickStats"/>
+            </LinearLayout>
         </LinearLayout>
-
     </LinearLayout>
-
 </LinearLayout>

@@ -30,43 +30,43 @@ public class player implements java.io.Serializable{
         name = playerName;
     }
 
-    public void setAce( ) {
-        ace += 1;
-        setWinner( );
+    public void setAce(int offset) {
+        ace += offset;
+        setWinner(offset);
     }
 
-    public void setFirstServe( ) {
-        firstServe += 1;
+    public void setFirstServe(int offset) {
+        firstServe += offset;
     }
 
-    public void setSecondServe( ) {
+    public void setSecondServe(int offset) {
         isSecondServe = true;
-        secondServe += 1;
+        secondServe += offset;
     }
 
-    public void setDoubleFault( ) {
-        doubleFault += 1;
-        setUnforcedError( );
+    public void setDoubleFault(int offset) {
+        doubleFault += offset;
+        setUnforcedError(offset);
     }
 
-    public void setWinFirstServe( ) {
-        winFirstServe += 1;
+    public void setWinFirstServe(int offset) {
+        winFirstServe += offset;
     }
 
-    public void setWinSecondServe( ) {
-        winSecondServe += 1;
+    public void setWinSecondServe(int offset) {
+        winSecondServe += offset;
     }
 
-    public void setWinner( ) {
-        winner += 1;
+    public void setWinner(int offset) {
+        winner += offset;
     }
 
-    public void setForcedError( ) {
-        forcedError += 1;
+    public void setForcedError(int offset) {
+        forcedError += offset;
     }
 
-    public void setUnforcedError( ) {
-        unforcedError += 1;
+    public void setUnforcedError(int offset) {
+        unforcedError += offset;
     }
 
     public void setGame(String score) {
@@ -77,12 +77,12 @@ public class player implements java.io.Serializable{
         isSecondServe = false;
     }
 
-    public void setIsServing(boolean bool) {
-        isServing = bool;
+    public void setIsServing(boolean serve) {
+        isServing = serve;
     }
 
-    public void setSet() {
-        set += 1;
+    public void setSet(int offset) {
+        set += offset;
     }
 
     public String getName( ) {

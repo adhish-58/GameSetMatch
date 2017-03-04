@@ -18,8 +18,8 @@
                 android:shape="rectangle" >
                 <solid
                     android:color="@color/red" />
-                <corners android:topLeftRadius="100dp" android:topRightRadius="6dp"
-                    android:bottomLeftRadius="100dp" android:bottomRightRadius="6dp"/>
+                <corners android:topLeftRadius="200dp" android:topRightRadius="6dp"
+                    android:bottomLeftRadius="200dp" android:bottomRightRadius="6dp"/>
             </shape>
     </item>
 </layer-list>
