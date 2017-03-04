@@ -7,8 +7,8 @@
     <string name="aces"> Aces</string>
     <string name="serve_first"> 1st serve in %</string>
     <string name="double_faults"> Double faults</string>
-    <string name="win_first"> Win % on 1st serve</string>
-    <string name="win_second"> Win % on 2nd serve</string>
+    <string name="win_first"> 1st Serve Win %</string>
+    <string name="win_second"> 2nd Serve Win %</string>
     <string name="points_won"> Points won</string>
     <string name="receiving_points"> Receiving points won</string>
     <string name="winners"> Winners</string>

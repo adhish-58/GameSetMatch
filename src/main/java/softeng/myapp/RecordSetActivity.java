@@ -324,7 +324,7 @@ public class RecordSetActivity extends AppCompatActivity {
         playerA.setSet();
         if (((scoreA-scoreB) >=1 && scoreA >= NUM_GAMES-1)) {
             finishMatch(playerA);
-        } 
+        }
     }
 
     public void finishMatch(player winner) {

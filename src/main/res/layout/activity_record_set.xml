@@ -44,8 +44,8 @@
                     android:textSize="30dp"
                     android:textColor="@color/black"
                     android:background="@drawable/custom_divider"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
                     android:id="@+id/p1"/>
                 <TextView
                     android:textSize="30dp"
@@ -67,8 +67,8 @@
                     android:textSize="30dp"
                     android:textColor="@color/black"
                     android:background="@drawable/custom_divider"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
                     android:id="@+id/p2"/>
                 <TextView
                     android:textSize="30dp"

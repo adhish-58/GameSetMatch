@@ -9,4 +9,5 @@
     <color name="royal">#102690</color>
     <item name="green" type="color">#FF99CC00</item>
     <item name="orange" type="color">#FFFFBB33</item>
+    <item name="red" type="color">#FD2B2B</item>
 </resources>
